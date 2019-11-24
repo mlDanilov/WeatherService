@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherService", "WeatherService\WeatherService.csproj", "{4F19C922-7990-4374-BBF6-93FBA494D7F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherDomainLib", "WeatherDomainLib\WeatherDomainLib.csproj", "{0A6DE504-89A9-418E-B7C2-07062BE9A522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherLib", "WeatherLib\WeatherLib.csproj", "{E97A48B2-398D-4A91-AC8C-F28AE40728E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherServiceUnitTests", "WeatherServiceUnitTests\WeatherServiceUnitTests.csproj", "{5F3B7B57-80DE-4763-A46E-F350F3CDD671}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F19C922-7990-4374-BBF6-93FBA494D7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F19C922-7990-4374-BBF6-93FBA494D7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F19C922-7990-4374-BBF6-93FBA494D7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F19C922-7990-4374-BBF6-93FBA494D7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A6DE504-89A9-418E-B7C2-07062BE9A522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6DE504-89A9-418E-B7C2-07062BE9A522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6DE504-89A9-418E-B7C2-07062BE9A522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6DE504-89A9-418E-B7C2-07062BE9A522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E97A48B2-398D-4A91-AC8C-F28AE40728E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97A48B2-398D-4A91-AC8C-F28AE40728E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97A48B2-398D-4A91-AC8C-F28AE40728E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97A48B2-398D-4A91-AC8C-F28AE40728E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F3B7B57-80DE-4763-A46E-F350F3CDD671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F3B7B57-80DE-4763-A46E-F350F3CDD671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F3B7B57-80DE-4763-A46E-F350F3CDD671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F3B7B57-80DE-4763-A46E-F350F3CDD671}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {003D9AD7-AEEE-4F9C-94C8-3869FA22777F}
+	EndGlobalSection
+EndGlobal

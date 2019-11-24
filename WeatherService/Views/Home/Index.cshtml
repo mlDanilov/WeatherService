@@ -1,0 +1,44 @@
+﻿<!--
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>preved!!!</h2>
+
+    -->
+<!DOCTYPE html>
+<html ng-app="weatherApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <script type="text/javascript" src="~/Scripts/angularJS/lib/angular.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/angularJS/lib/angular-resource.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/angularJS/lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/angularJS/lib/angular-cookies.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/angularJS/weather/app.js"></script>
+    <script type="text/javascript" src="~/Scripts/angularJS/userStorage/UserStorage.js"></script>
+    <script type="text/javascript" src="~/Scripts/angularJS/weather/factory/WeatherService.js"></script>
+    <script type="text/javascript" src="~/Scripts/angularJS/weather/factory/WeatherParams.js"></script>
+    <script type="text/javascript" src="~/Scripts/angularJS/city/factory/cities.js"></script>
+    <script type="text/javascript" src="~/Scripts/angularJS/weather/weatherController.js"></script>
+
+</head>
+<body ng-controller="weatherController">
+    <!--Список доступных городов-->
+    <select ng-model='Cities.SelectedItem'
+            ng-options='city as city.Name for city in  Cities.Items'
+            ng-change="cityChanged()">
+    </select>
+    <!--Список доступных погодных сервисов-->
+    <select ng-model='WeatherServices.SelectedItem'
+            ng-options='wServ as wServ.Name for wServ in  WeatherServices.Items'
+            ng-change="weatherServiceChanged()">
+    </select>
+    <!--Информация о погоде-->
+    <div>
+        <div>Температура: {{weatherInfo.Temp}} ℃</div>
+        <div>Давление: {{weatherInfo.Pressure_mmH2O}} мм рт. ст.</div>
+        <div>Влажность: {{weatherInfo.Humidity}} %</div>
+    </div>
+</body>
+</html>
